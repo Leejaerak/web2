@@ -12,6 +12,7 @@
     background-repeat: no-repeat;
     text-indent: -999px;
     background-image: url(../css/img/logo.png);
+    background-image: url(../img/logo.png);
     background-position: 0 -98px;
     vertical-align: top;
     margin: 17px 0 0 17px;
@@ -52,6 +53,7 @@
 .image_section{
     display: inline-block;
     background-image: url(../css/img/img.jpg);
+    background-image: url(../img/img.jpg);
     background-size: 540px auto;
 }
 
