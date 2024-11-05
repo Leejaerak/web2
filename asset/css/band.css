@@ -1,0 +1,11 @@
+.inner{
+  width: 1000px;
+  margin:0 auto;
+}
+#header { height: 68px;position: absolute; border-bottom: 1px solid #796b56; top: 0;left: 0; right: 0;}
+#header .logo { position: absolute; top: 10px; left: 10px; }
+#header .logo a { display: block; width: 102px; height: 86px; background: url(../images/icon_logo.png) no-repeat 0 0; text-indent: -99999em;}
+.inner_header .gnb ul{display: flex; justify-content: flex-end; align-items: center;}
+.inner_header .gnb li { margin-left: 16px; }
+.inner_header .gnb li:last-child { margin-right: 50px; }
+.inner_header .gnb li a{font-size: 16px;}
