@@ -1,5 +1,4 @@
 .header{
-    min-width: 1000px;
     height: 68px;
     background-color: #f6f8fa;
     display: flex;
@@ -21,9 +20,31 @@
     align-items: center;
     
 }
+.lang_select{
+    outline: none;
+    cursor: pointer;
+}
+.lang_select:hover{
+    text-decoration: underline;
+}
 .header li a{
     color: #444;
 }
+.header  li:last-child > a {
+    background: #21c531;
+    display: inline-block;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    border-radius: 3px;
+}
+.header li:first-child{
+    outline: none;
+    cursor: pointer;
+}
+
 .header li+li{
     margin-left:30px ;
 }
@@ -134,16 +155,14 @@
     vertical-align: top;
     text-align: left;
 }
+.content_list:not(:first-child){
+    margin-left: 40px;
+}
 .content_img > img{
     width: 300px;
     height: 150px;
 }
-.content_img:n{
-    margin-left: 20px;
-}
-.content_section:nth-child(2){
-    margin-left: 40px;
-}
+
 .content_section h4{
     font-size: 24px;
     font-weight: 500;
@@ -151,14 +170,15 @@
     color: #222;
 }
 .content_section p{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     color: #444;
     margin-top: 6px;
     line-height: 1.6;
 }
 .band_content {
-    padding-top: 20px;
+    padding: 50px;
+    background-color: gainsboro;
   }
   
   .band_menu {
@@ -202,8 +222,101 @@
     font-size: 14px;
     color: #888;
   }
-  
+  .band_list button{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 4px;
+    height: 26px;
+    width: 100px;
+    padding: 0 10px 0 9px;
+    border: 1px solid #bababa;
+    border-radius: 200px;
+   
+    
+  }
   .band_list button a {
     color: #007bff;
     display: inline-block
   }
+  .app_down{
+    padding: 50px;
+  }
+  .app_down .inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .left .band_img{
+    background: url(../img/logo.png);
+    background-position: -162px 0;
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    background-repeat: no-repeat; 
+  }
+  .right{
+    display: flex;
+  }
+  .left ,.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .right .google_play{
+    background: url(../img/logo.png);
+    width: 160px;
+    height: 47px;
+    display: inline-block;
+    background-repeat: no-repeat; 
+    background-position: 0 0;
+    }
+  .right .app_store{
+    background: url(../img/logo.png);
+    width: 160px;
+    height: 47px;
+    display: inline-block;
+    background-repeat: no-repeat; 
+    background-position: 0 -49px;
+    }
+    .right div+div {
+        margin-left: 20px;
+    }
+    .band_title{
+        margin-left: 20px;
+    }
+    .band_title h3{
+     font-size: 23px;
+     color: #222;
+    }
+    .band_title p{
+        margin-top: 10px;
+    }
+    #footer{
+    background-color: #2A3038;
+    height: 100px;
+   }
+   .footer_menu li{
+    margin-top: 10px;
+   }
+   .footer_menu li:not(:first-child){
+    margin-left: 20px;
+   }
+   .footer_menu li a{
+    font-size: 13px;
+    font-weight: 400;
+    color: #888;
+    vertical-align: top;
+   }
+   
+   .footer_menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+   }
+   .copy{
+    font-size: 13px;
+    font-weight: 500;
+    color: #b3b3b3;
+    margin-top: 5px;
+   }
+   
